@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - 'release/v*'
+
+jobs:
+  build-dmg:
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract version
+        id: version
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          VERSION="${BRANCH#release/}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Build archive (ad-hoc signed)
+        run: |
+          xcodebuild archive \
+            -project apple-motion.xcodeproj \
+            -scheme apple-motion \
+            -destination "platform=macOS" \
+            -archivePath $RUNNER_TEMP/apple-motion.xcarchive \
+            -configuration Release \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="-" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Export app
+        run: |
+          cat > $RUNNER_TEMP/ExportOptions.plist << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>mac-application</string>
+            <key>signingStyle</key><string>manual</string>
+          </dict>
+          </plist>
+          EOF
+          xcodebuild -exportArchive \
+            -archivePath $RUNNER_TEMP/apple-motion.xcarchive \
+            -exportPath $RUNNER_TEMP/export \
+            -exportOptionsPlist $RUNNER_TEMP/ExportOptions.plist
+
+      - name: Create DMG
+        id: dmg
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          DMG_NAME="MacSense-${VERSION}-arm64.dmg"
+          mkdir -p $RUNNER_TEMP/dmg-staging
+          cp -r "$RUNNER_TEMP/export/apple-motion.app" $RUNNER_TEMP/dmg-staging/
+          ln -s /Applications $RUNNER_TEMP/dmg-staging/Applications
+          hdiutil create \
+            -volname "MacSense ${VERSION}" \
+            -srcfolder $RUNNER_TEMP/dmg-staging \
+            -ov -format UDZO \
+            $RUNNER_TEMP/$DMG_NAME
+          echo "dmg_path=$RUNNER_TEMP/$DMG_NAME" >> $GITHUB_OUTPUT
+          echo "dmg_name=$DMG_NAME" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: MacSense ${{ steps.version.outputs.version }}
+          files: ${{ steps.dmg.outputs.dmg_path }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
