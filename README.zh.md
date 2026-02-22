@@ -32,6 +32,17 @@
 
 ---
 
+## 下载
+
+Apple Silicon 预编译 DMG 可在 [Releases 页面](https://github.com/huanglizhuo/MacSense/releases) 下载。
+
+1. 从最新发布版本中下载 `MacSense-vX.Y.Z-arm64.dmg`
+2. 打开 DMG，将 **apple-motion.app** 拖入「应用程序」文件夹
+3. 首次启动时 macOS 可能提示无法验证开发者 —— 右键点击应用图标选择**打开**，再在弹窗中点击**打开**即可
+4. 按提示在**系统设置 → 隐私与安全性 → 输入监控**中授予权限，然后重新启动应用
+
+---
+
 ## 编译运行
 
 ```bash

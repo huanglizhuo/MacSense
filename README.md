@@ -31,6 +31,17 @@ A native SwiftUI macOS app that reads the built-in MEMS IMU (accelerometer + gyr
 
 ---
 
+## Download
+
+Pre-built DMG releases for Apple Silicon are available on the [Releases page](https://github.com/huanglizhuo/MacSense/releases).
+
+1. Download `MacSense-vX.Y.Z-arm64.dmg` from the latest release
+2. Open the DMG and drag **apple-motion.app** to your Applications folder
+3. On first launch, macOS may block the app since it is not notarized — right-click the app icon and choose **Open**, then click **Open** in the dialog
+4. When prompted, grant **Input Monitoring** permission in **System Settings → Privacy & Security → Input Monitoring**, then relaunch
+
+---
+
 ## Build
 
 ```bash
