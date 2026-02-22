@@ -5,6 +5,9 @@ on:
     branches:
       - 'release/v*'
 
+permissions:
+  contents: write
+
 jobs:
   build-dmg:
     runs-on: macos-14
