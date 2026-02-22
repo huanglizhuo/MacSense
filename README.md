@@ -28,7 +28,6 @@ A native SwiftUI macOS app that reads the built-in MEMS IMU (accelerometer + gyr
 | macOS | 14.0 Sonoma or later |
 | Xcode | 15.0 or later |
 | Sandbox | Disabled (required for IOKit HID access) |
-| Permission | Input Monitoring — System Settings → Privacy & Security → Input Monitoring |
 
 ---
 
