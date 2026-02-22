@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F92EE47F3E145939B0865F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05023ED550C74043B1139E70 /* ContentView.swift */; };
+		38EB674A53C142818A6560D2 /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331AA1131036484ABECC8D69 /* OrientationView.swift */; };
+		3F9D6A5841AF43CDA86ECBBB /* EventLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AAD2C5607420584A37E66 /* EventLogView.swift */; };
+		7CB0270FA9844A59A608AF45 /* SignalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14368EBDBDAB418DBE826EAF /* SignalProcessing.swift */; };
+		859160C6751B49ACAE99792A /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6DEEFC43543999EE89343 /* SensorManager.swift */; };
+		8A61DD82C5B14B3AA0B8B1E1 /* apple_motionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B0B358997E494D8336B1E6 /* apple_motionApp.swift */; };
+		8E2CE68138E44C71B8FB45D7 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15290BE58B47D28E047908 /* WaveformView.swift */; };
+		A2A5CD119FA24A22AA5FC1FA /* SpectralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD965D6E0EE449D5932FFED5 /* SpectralView.swift */; };
+		B75EDFA310D84802BA8C5585 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A81CA0AA12402ABF4E9DBA /* IOKit.framework */; };
+		DF68D89054D445CD921EA824 /* VibrationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6339439FB4BA2A3B7F405 /* VibrationDetector.swift */; };
+		F2D72294612841C1ABCD75F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2441E903F8F4CA9A325B53C /* Assets.xcassets */; };
+		BB22C48E3D2F5091B4120C86 /* StatusBarLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11B37F2C1E4F8DA3019B75 /* StatusBarLabelView.swift */; };
+		DD44E6A05F417B13D63402E8 /* StatusBarPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33D59F4E306A02C52301D7 /* StatusBarPopupView.swift */; };
+		EE11F3A2B7C84D509F316A2B /* StatusBarDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44D7E19A3F4B2EA1570D3C /* StatusBarDisplayMode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05023ED550C74043B1139E70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05F6DEEFC43543999EE89343 /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		14368EBDBDAB418DBE826EAF /* SignalProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProcessing.swift; sourceTree = "<group>"; };
+		178DC56953024785A7A2DD11 /* apple-motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-motion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		331AA1131036484ABECC8D69 /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		45EF2C4E9E764538A86A5A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A81CA0AA12402ABF4E9DBA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		8D15290BE58B47D28E047908 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		A41AAD2C5607420584A37E66 /* EventLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogView.swift; sourceTree = "<group>"; };
+		BD965D6E0EE449D5932FFED5 /* SpectralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectralView.swift; sourceTree = "<group>"; };
+		C0B0B358997E494D8336B1E6 /* apple_motionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_motionApp.swift; sourceTree = "<group>"; };
+		C2441E903F8F4CA9A325B53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E6339439FB4BA2A3B7F405 /* VibrationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationDetector.swift; sourceTree = "<group>"; };
+		FC2E0C90128B40E2B4074060 /* apple-motion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "apple-motion.entitlements"; sourceTree = "<group>"; };
+		AA11B37F2C1E4F8DA3019B75 /* StatusBarLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarLabelView.swift; sourceTree = "<group>"; };
+		CC33D59F4E306A02C52301D7 /* StatusBarPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPopupView.swift; sourceTree = "<group>"; };
+		CC44D7E19A3F4B2EA1570D3C /* StatusBarDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarDisplayMode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA975F517C034A31807B88B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75EDFA310D84802BA8C5585 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9707A80C4BEC4171BD35F949 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05023ED550C74043B1139E70 /* ContentView.swift */,
+				8D15290BE58B47D28E047908 /* WaveformView.swift */,
+				331AA1131036484ABECC8D69 /* OrientationView.swift */,
+				BD965D6E0EE449D5932FFED5 /* SpectralView.swift */,
+				A41AAD2C5607420584A37E66 /* EventLogView.swift */,
+				AA11B37F2C1E4F8DA3019B75 /* StatusBarLabelView.swift */,
+				CC33D59F4E306A02C52301D7 /* StatusBarPopupView.swift */,
+				CC44D7E19A3F4B2EA1570D3C /* StatusBarDisplayMode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99A07820195F48719754180A = {
+			isa = PBXGroup;
+			children = (
+				A5E23DD0BCE84ECFAE519983 /* apple-motion */,
+				B978D3A99950461B92108270 /* Products */,
+				F3E3EB9C38EC48508A10B6A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E23DD0BCE84ECFAE519983 /* apple-motion */ = {
+			isa = PBXGroup;
+			children = (
+				C0B0B358997E494D8336B1E6 /* apple_motionApp.swift */,
+				05F6DEEFC43543999EE89343 /* SensorManager.swift */,
+				14368EBDBDAB418DBE826EAF /* SignalProcessing.swift */,
+				D7E6339439FB4BA2A3B7F405 /* VibrationDetector.swift */,
+				9707A80C4BEC4171BD35F949 /* Views */,
+				C2441E903F8F4CA9A325B53C /* Assets.xcassets */,
+				45EF2C4E9E764538A86A5A07 /* Info.plist */,
+				FC2E0C90128B40E2B4074060 /* apple-motion.entitlements */,
+			);
+			path = "apple-motion";
+			sourceTree = "<group>";
+		};
+		B978D3A99950461B92108270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178DC56953024785A7A2DD11 /* apple-motion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E3EB9C38EC48508A10B6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A81CA0AA12402ABF4E9DBA /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2CE039935ED4C0595852912 /* apple-motion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9394D768C3694F4DA6BA4E5A /* Build configuration list for PBXNativeTarget "apple-motion" */;
+			buildPhases = (
+				DD0285254418439C990F777D /* Sources */,
+				FA975F517C034A31807B88B1 /* Frameworks */,
+				20CC55DD03BE4DF187ECAF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "apple-motion";
+			productName = "apple-motion";
+			productReference = 178DC56953024785A7A2DD11 /* apple-motion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8263846EF7744391AA5F908D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B2CE039935ED4C0595852912 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A0A7A88D2F4E4CE1831EA73A /* Build configuration list for PBXProject "apple-motion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99A07820195F48719754180A;
+			productRefGroup = B978D3A99950461B92108270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2CE039935ED4C0595852912 /* apple-motion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20CC55DD03BE4DF187ECAF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D72294612841C1ABCD75F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0285254418439C990F777D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61DD82C5B14B3AA0B8B1E1 /* apple_motionApp.swift in Sources */,
+				859160C6751B49ACAE99792A /* SensorManager.swift in Sources */,
+				7CB0270FA9844A59A608AF45 /* SignalProcessing.swift in Sources */,
+				DF68D89054D445CD921EA824 /* VibrationDetector.swift in Sources */,
+				1F92EE47F3E145939B0865F7 /* ContentView.swift in Sources */,
+				8E2CE68138E44C71B8FB45D7 /* WaveformView.swift in Sources */,
+				38EB674A53C142818A6560D2 /* OrientationView.swift in Sources */,
+				A2A5CD119FA24A22AA5FC1FA /* SpectralView.swift in Sources */,
+				3F9D6A5841AF43CDA86ECBBB /* EventLogView.swift in Sources */,
+				BB22C48E3D2F5091B4120C86 /* StatusBarLabelView.swift in Sources */,
+				DD44E6A05F417B13D63402E8 /* StatusBarPopupView.swift in Sources */,
+				EE11F3A2B7C84D509F316A2B /* StatusBarDisplayMode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23BDCE00FDB84CD9A5610F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "apple-motion/apple-motion.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9Q47Y2LQ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "apple-motion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clothpath.amotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		2BAD549A124C4F7DBCFA5699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71239E3614F44F608B1F25CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "apple-motion/apple-motion.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9Q47Y2LQ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "apple-motion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clothpath.amotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		905263D4E9DD47A6AD629FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9394D768C3694F4DA6BA4E5A /* Build configuration list for PBXNativeTarget "apple-motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BDCE00FDB84CD9A5610F6E /* Debug */,
+				71239E3614F44F608B1F25CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A7A88D2F4E4CE1831EA73A /* Build configuration list for PBXProject "apple-motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAD549A124C4F7DBCFA5699 /* Debug */,
+				905263D4E9DD47A6AD629FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8263846EF7744391AA5F908D /* Project object */;
+}
